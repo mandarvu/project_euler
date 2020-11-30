@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/home/mandarvu/anaconda3/lib/python3.7/site-packages/spyder/app/mainwindow.py", line 3718, in main
+    mainwindow = run_spyder(app, options, args)
+  File "/home/mandarvu/anaconda3/lib/python3.7/site-packages/spyder/app/mainwindow.py", line 3569, in run_spyder
+    main.post_visible_setup()
+  File "/home/mandarvu/anaconda3/lib/python3.7/site-packages/spyder/app/mainwindow.py", line 1411, in post_visible_setup
+    self.projects.reopen_last_project()
+  File "/home/mandarvu/anaconda3/lib/python3.7/site-packages/spyder/plugins/projects/plugin.py", line 404, in reopen_last_project
+    save_previous_files=False)
+  File "/home/mandarvu/anaconda3/lib/python3.7/site-packages/spyder/plugins/projects/plugin.py", line 322, in open_project
+    self.watcher.start(path)
+  File "/home/mandarvu/anaconda3/lib/python3.7/site-packages/spyder/plugins/projects/utils/watcher.py", line 126, in start
+    raise e
+  File "/home/mandarvu/anaconda3/lib/python3.7/site-packages/spyder/plugins/projects/utils/watcher.py", line 101, in start
+    self.observer.start()
+  File "/home/mandarvu/anaconda3/lib/python3.7/site-packages/watchdog/observers/api.py", line 253, in start
+    emitter.start()
+  File "/home/mandarvu/anaconda3/lib/python3.7/site-packages/watchdog/utils/__init__.py", line 110, in start
+    self.on_thread_start()
+  File "/home/mandarvu/anaconda3/lib/python3.7/site-packages/watchdog/observers/inotify.py", line 121, in on_thread_start
+    self._inotify = InotifyBuffer(path, self.watch.is_recursive)
+  File "/home/mandarvu/anaconda3/lib/python3.7/site-packages/watchdog/observers/inotify_buffer.py", line 35, in __init__
+    self._inotify = Inotify(path, recursive)
+  File "/home/mandarvu/anaconda3/lib/python3.7/site-packages/watchdog/observers/inotify_c.py", line 200, in __init__
+    self._add_dir_watch(path, recursive, event_mask)
+  File "/home/mandarvu/anaconda3/lib/python3.7/site-packages/watchdog/observers/inotify_c.py", line 387, in _add_dir_watch
+    raise OSError(errno.ENOTDIR, os.strerror(errno.ENOTDIR), path)
+NotADirectoryError: [Errno 20] Not a directory: b'Documents/proj_euler/spyder_project'

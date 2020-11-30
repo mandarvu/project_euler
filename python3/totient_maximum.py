@@ -1,7 +1,7 @@
 # Prject Euler problem no.69
 # "projecteuler.net/problem=69"
 # Created on Wed Aug 12 12:20:39 2020
-# Totient maximum
+# Totient maximum ( totient function == euler phi function )
 
 #%% Prime Factor finder
 def prime_factors(num):
